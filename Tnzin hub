@@ -1,0 +1,39 @@
+-- TNzin hub
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Tnzin hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local  CombatTab = Window:MakeTab({
+    Name = "Combat",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = CombatTab:AddSection({
+    Name = "Combat"
+})
+
+CombatTab:AddButton({
+    Name = "Parry",
+    Callback = function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V4.0.0",true))()
+      end
+})
+
+local  SpamTab = Window:MakeTab({
+    Name = "Spam",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = SpamTab:AddSection({
+    Name = "Spam"
+})
+
+SpamTab:AddButton({
+    Name = "Spam",
+    Callback = function()
+              loadstring(game:HttpGet('https://pastebin.com/raw/KB4xQe4j'))()
+      end    
+})
